@@ -1,0 +1,46 @@
+[
+  {
+    "id": "aws-cp",
+    "title": "AWS Certified Cloud Practitioner",
+    "provider": "Amazon Web Services",
+    "cost": 100,
+    "currency": "USD",
+    "level": "Beginner",
+    "url": "https://aws.amazon.com/certification/certified-cloud-practitioner/",
+    "skills": ["AWS", "Cloud", "IAM", "S3", "EC2"],
+    "description": "Foundational AWS cloud certification."
+  },
+  {
+    "id": "gcp-ace",
+    "title": "Google Associate Cloud Engineer",
+    "provider": "Google Cloud",
+    "cost": 125,
+    "currency": "USD",
+    "level": "Intermediate",
+    "url": "https://cloud.google.com/certification/cloud-engineer",
+    "skills": ["GCP", "Cloud", "Kubernetes", "Compute Engine"],
+    "description": "Deploy and manage GCP applications."
+  },
+  {
+    "id": "freecodecamp-js",
+    "title": "freeCodeCamp JavaScript Algorithms & Data Structures",
+    "provider": "freeCodeCamp",
+    "cost": 0,
+    "currency": "USD",
+    "level": "Beginner",
+    "url": "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/",
+    "skills": ["JavaScript", "Algorithms", "Data Structures"],
+    "description": "Free, self-paced JS and CS fundamentals."
+  },
+  {
+    "id": "tf-dev-cert",
+    "title": "TensorFlow Developer Certificate",
+    "provider": "Google",
+    "cost": 100,
+    "currency": "USD",
+    "level": "Intermediate",
+    "url": "https://www.tensorflow.org/certificate",
+    "skills": ["TensorFlow", "Deep Learning", "Python", "Keras"],
+    "description": "Hands-on deep learning with TensorFlow."
+  }
+]

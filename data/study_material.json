@@ -1,0 +1,57 @@
+[
+  {
+    "id": "yt-dsa-neetcode",
+    "title": "NeetCode DSA Roadmap",
+    "platform": "YouTube",
+    "cost": 0,
+    "hours": 30,
+    "level": "Intermediate",
+    "url": "https://www.youtube.com/c/NeetCode",
+    "skills": ["Data Structures", "Algorithms", "Python"],
+    "description": "Free DSA interview prep."
+  },
+  {
+    "id": "yt-fcc-python",
+    "title": "freeCodeCamp Python for Beginners",
+    "platform": "YouTube",
+    "cost": 0,
+    "hours": 6,
+    "level": "Beginner",
+    "url": "https://www.youtube.com/watch?v=rfscVS0vtbw",
+    "skills": ["Python", "Programming"],
+    "description": "Full beginner Python course."
+  },
+  {
+    "id": "coursera-ml",
+    "title": "Machine Learning Specialization",
+    "platform": "Coursera",
+    "cost": 49,
+    "hours": 60,
+    "level": "Intermediate",
+    "url": "https://www.coursera.org/specializations/machine-learning-introduction",
+    "skills": ["Machine Learning", "Python", "TensorFlow", "Supervised Learning"],
+    "description": "Andrew Ng's ML specialization."
+  },
+  {
+    "id": "edx-cs50",
+    "title": "CS50: Introduction to Computer Science",
+    "platform": "edX",
+    "cost": 0,
+    "hours": 100,
+    "level": "Beginner",
+    "url": "https://cs50.harvard.edu/x/",
+    "skills": ["C", "Python", "SQL", "Algorithms", "Web"],
+    "description": "Harvard's intro CS course (free audit)."
+  },
+  {
+    "id": "nptel-dbms",
+    "title": "NPTEL Database Management Systems",
+    "platform": "NPTEL",
+    "cost": 0,
+    "hours": 40,
+    "level": "Intermediate",
+    "url": "https://nptel.ac.in/course/nptel/course_info/106105179",
+    "skills": ["Database", "SQL", "Normalization", "Transactions"],
+    "description": "Comprehensive course on Database Management Systems."
+  }
+]
