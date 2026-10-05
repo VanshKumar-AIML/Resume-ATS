@@ -1,0 +1,38 @@
+-- Active: 1791213665351@@localhost@5432
+-- Resume-ATS PostgreSQL schema
+-- Mirrors backend/models.py. Run this if you'd rather set up the schema by
+-- hand instead of relying on SQLAlchemy's create_all() at startup.
+create DATABASE mp IF NOT EXISTS resume_ats;
+CREATE TABLE IF NOT EXISTS users (
+    id SERIAL PRIMARY KEY,
+    email VARCHAR UNIQUE NOT NULL,
+    hashed_password VARCHAR NOT NULL,
+    full_name VARCHAR,
+    created_at TIMESTAMP DEFAULT NOW()
+);
+
+CREATE TABLE IF NOT EXISTS resumes (
+    id SERIAL PRIMARY KEY,
+    owner_id INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+    version INTEGER DEFAULT 1,
+    filename VARCHAR,
+    raw_text TEXT NOT NULL,
+    sections JSONB,
+    job_description TEXT,
+    created_at TIMESTAMP DEFAULT NOW()
+);
+
+CREATE TABLE IF NOT EXISTS analysis_results (
+    id SERIAL PRIMARY KEY,
+    resume_id INTEGER NOT NULL UNIQUE REFERENCES resumes(id) ON DELETE CASCADE,
+    ats_score FLOAT NOT NULL,
+    match_percentage FLOAT,
+    matched_keywords JSONB,
+    missing_keywords JSONB,
+    skills_found JSONB,
+    feature_vector JSONB,
+    created_at TIMESTAMP DEFAULT NOW()
+);
+
+CREATE INDEX IF NOT EXISTS idx_resumes_owner_id ON resumes(owner_id);
+CREATE INDEX IF NOT EXISTS idx_analysis_resume_id ON analysis_results(resume_id);
